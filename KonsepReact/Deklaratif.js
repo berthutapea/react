@@ -14,5 +14,3 @@ function Contacts() {
 }
 
 export default Contacts;
-
-<button onClick={callContact}>Call Contact</button>
