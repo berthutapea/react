@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 // Teknik modularisasi
-import DicodingLogo from './dicoding-header-logo.png'
+// import DicodingLogo from './dicoding-header-logo.png'
 
 const element = (
     <div>
