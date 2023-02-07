@@ -17,5 +17,5 @@ const element = (
     </div>
 );
 
-const root = createRoot(document.getElementById('root'));
-root.render(element);
+// const root = createRoot(document.getElementById('root'));
+// root.render(element);
