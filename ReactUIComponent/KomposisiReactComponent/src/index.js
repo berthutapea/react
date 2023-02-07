@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 function Button({ link }) {
-    return <a href={link}>Find out more</a>;
+    return <a href={link}>Find Out More</a>;
 }
 
 function CardHeader({ image, category }) {
