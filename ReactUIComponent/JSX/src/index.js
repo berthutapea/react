@@ -12,7 +12,7 @@ const element = (
             <li>Tagline: Decode Ideas, Discover Potential.</li>
             {/* <img src="./img/dicoding-header-logo.png" alt="Dicoding Logo" /> */}
             {/* // Teknik modularisasi */}
-            <img src={DicodingLogo} alt="Dicoding Logo" />
+            {/* <img src={DicodingLogo} alt="Dicoding Logo" /> */}
         </ul>
     </div>
 );
