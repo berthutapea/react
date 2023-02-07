@@ -101,9 +101,13 @@ function News() {
         link={someNews[2].link}
       /> */}
 
-            <Card {...someNews[0]} />
+            {/* <Card {...someNews[0]} />
             <Card {...someNews[1]} />
-            <Card {...someNews[2]} />
+            <Card {...someNews[2]} /> */}
+
+            {someNews.map((news) => (
+                <Card {...news} key={news.title} />
+            ))}
         </div>
     );
 }
