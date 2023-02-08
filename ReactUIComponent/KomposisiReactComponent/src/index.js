@@ -83,5 +83,5 @@ function News() {
     );
 }
 
-const root = createRoot(document.getElementById('root'));
-root.render(<News />);
+// const root = createRoot(document.getElementById('root'));
+// root.render(<News />);
