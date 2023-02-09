@@ -1,22 +1,22 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-class MyComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        console.log('Component created!');
-    }
+function CounterDisplay({ count }) {
+  if (count === 0) {
+    return <p>{count}</p>;
+  }
 
-    render() {
-        return <p>Hello, {this.props.name}!</p>;
-    }
+  if (count % 5 === 0 && count % 7 === 0) {
+    return <p>FizzBuzz</p>;
+  }
+
+  if (count % 5 === 0) {
+    return <p>Fizz</p>;
+  }
+
+  if (count % 7 === 0) {
+    return <p>Buzz</p>;
+  }
+
+  return <p>{count}</p>;
 }
-
-const root = createRoot(document.getElementById('root'));
-root.render(
-    <div>
-        <MyComponent name="Dicoding" />
-        <MyComponent name="John" />
-        <MyComponent name="Doe" />
-    </div>
-);
