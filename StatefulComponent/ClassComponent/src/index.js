@@ -12,11 +12,11 @@ class MyComponent extends React.Component {
     }
 }
 
-// const root = createRoot(document.getElementById('root'));
-// root.render(
-//     <div>
-//         <MyComponent name="Dicoding" />
-//         <MyComponent name="John" />
-//         <MyComponent name="Doe" />
-//     </div>
-// );
+const root = createRoot(document.getElementById('root'));
+root.render(
+    <div>
+        <MyComponent name="Dicoding" />
+        <MyComponent name="John" />
+        <MyComponent name="Doe" />
+    </div>
+);
