@@ -13,19 +13,19 @@ function FAQPage() {
     return <p>This is FAQ page</p>;
 }
 
-function Link({ target, navigate, children }) {
-    return (
-        <a
-            href={target}
-            onClick={(event) => {
-                event.preventDefault(); // menghapus behavior default
-                navigate(target); // mengubah state berdasarkan target
-            }}
-        >
-            {children}
-        </a>
-    );
-}
+// function Link({ target, navigate, children }) {
+//     return (
+//         <a
+//             href={target}
+//             onClick={(event) => {
+//                 event.preventDefault(); // menghapus behavior default
+//                 navigate(target); // mengubah state berdasarkan target
+//             }}
+//         >
+//             {children}
+//         </a>
+//     );
+// }
 
 class App extends React.Component {
     constructor(props) {
