@@ -71,11 +71,11 @@ class App extends React.Component {
                         </ul>
                     </nav>
                 </header>
-                {/* <main>
+                <main>
                     {this.state.page === '/' && <HomePage />}
                     {this.state.page === '/about' && <AboutPage />}
                     {this.state.page === '/faq' && <FAQPage />}
-                </main> */}
+                </main>
             </>
         );
     }
