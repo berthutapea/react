@@ -39,13 +39,13 @@ class App extends React.Component {
         this.navigate = this.navigate.bind(this);
     }
 
-    navigate(target) {
-        this.setState(() => {
-            return {
-                page: target
-            };
-        });
-    }
+    // navigate(target) {
+    //     this.setState(() => {
+    //         return {
+    //             page: target
+    //         };
+    //     });
+    // }
 
     render() {
         return (
