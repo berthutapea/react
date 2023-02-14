@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import NowPlayingPage from './pages/NowPlayingPage';
 import SearchPage from './pages/SearchPage';
 import UpcomingPage from './pages/UpcomingPage';
+import DetailPage from './pages/DetailPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/now-playing" element={<NowPlayingPage />} />
           <Route path="/upcoming" element={<UpcomingPage />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/movies/:id" element={<DetailPage />} />
         </Routes>
       </main>
     </>
