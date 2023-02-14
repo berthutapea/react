@@ -14,11 +14,11 @@ function MovieItem({ id, title, backdropPath, overview }) {
     );
 }
 
-// MovieItem.propTypes = {
-//     id: PropTypes.number.isRequired,
-//     title: PropTypes.string.isRequired,
-//     backdropPath: PropTypes.string.isRequired,
-//     overview: PropTypes.string.isRequired
-// };
+MovieItem.propTypes = {
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    backdropPath: PropTypes.string.isRequired,
+    overview: PropTypes.string.isRequired
+};
 
 export default MovieItem;
