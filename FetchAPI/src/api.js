@@ -18,22 +18,22 @@ async function getRestaurant(id) {
     return responseJson.restaurant;
 }
 
-// async function postRestaurantReview(id, name, review) {
-//     const response = await fetch('https://restaurant-api.dicoding.dev/review', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify({
-//             id,
-//             name,
-//             review
-//         })
-//     });
+async function postRestaurantReview(id, name, review) {
+    const response = await fetch('https://restaurant-api.dicoding.dev/review', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            id,
+            name,
+            review
+        })
+    });
 
-//     const responseJson = await response.json();
+    const responseJson = await response.json();
 
-//     return responseJson.customerReviews;
-// }
+    return responseJson.customerReviews;
+}
 
 export { getRestaurant, getRestaurants, postRestaurantReview };
