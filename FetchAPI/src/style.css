@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    background-color: white;
+    padding: 12px;
+    border-bottom: 1px solid black;
+}
+
+#root {
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.restaurant-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.restaurant-item {
+    padding: 16px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail-button {
+    font-family: sans-serif;
+    padding: 8px;
+    background-color: #eee;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.restaurant {
+    padding: 16px;
+    border: 1px solid black;
+}
+
+.restaurant-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reviews-list {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.review-item {
+    padding: 16px;
+    border: 1px solid black;
+}
+
+.review-input {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.review-input input,
+.review-input button {
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+.review-input button,
+.button-back {
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+.button-back {
+    margin-top: 32px;
+    padding: 10px;
+}
