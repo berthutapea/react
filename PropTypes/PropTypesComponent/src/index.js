@@ -21,15 +21,15 @@ function News({ title, description, image, isFeatured, tags, bookmark, style }) 
 }
 
 // TODO: definisikan propTypes untuk komponen News
-News.propTypes = {
-  title: PropTypes.string.isRequired, //PropTypes Untuk Megatasi Erorr
-  description: PropTypes.string.isRequired, //PropTypes Untuk Megatasi Erorr
-  image: PropTypes.string.isRequired, //PropTypes Untuk Megatasi Erorr
-  isFeatured: PropTypes.bool.isRequired, //PropTypes Untuk Megatasi Erorr
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired, //PropTypes Untuk Megatasi Erorr
-  bookmark: PropTypes.func.isRequired, //PropTypes Untuk Megatasi Erorr
-  style: PropTypes.object //PropTypes Untuk Megatasi Erorr
-};
+// News.propTypes = {
+//   title: PropTypes.string.isRequired, //PropTypes Untuk Megatasi Erorr
+//   description: PropTypes.string.isRequired, //PropTypes Untuk Megatasi Erorr
+//   image: PropTypes.string.isRequired, //PropTypes Untuk Megatasi Erorr
+//   isFeatured: PropTypes.bool.isRequired, //PropTypes Untuk Megatasi Erorr
+//   tags: PropTypes.arrayOf(PropTypes.string).isRequired, //PropTypes Untuk Megatasi Erorr
+//   bookmark: PropTypes.func.isRequired, //PropTypes Untuk Megatasi Erorr
+//   style: PropTypes.object //PropTypes Untuk Megatasi Erorr
+// };
 
 const root = createRoot(document.getElementById('root'));
 root.render(
