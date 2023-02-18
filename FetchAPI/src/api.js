@@ -12,11 +12,11 @@ async function getRestaurants() {
     return responseJson.restaurants;
 }
 
-// async function getRestaurant(id) {
-//     const response = await fetch(`https://restaurant-api.dicoding.dev/detail/${id}`);
-//     const responseJson = await response.json();
-//     return responseJson.restaurant;
-// }
+async function getRestaurant(id) {
+    const response = await fetch(`https://restaurant-api.dicoding.dev/detail/${id}`);
+    const responseJson = await response.json();
+    return responseJson.restaurant;
+}
 
 // async function postRestaurantReview(id, name, review) {
 //     const response = await fetch('https://restaurant-api.dicoding.dev/review', {
