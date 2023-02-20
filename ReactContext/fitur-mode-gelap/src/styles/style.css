@@ -1,0 +1,48 @@
+:root {
+    --font-color: #333;
+    --background-color: #eee;
+}
+
+[data-theme='dark'] {
+    --font-color: #eee;
+    --background-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.3s ease-in;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+button {
+    background: transparent;
+    color: var(--font-color);
+    font-size: 48px;
+    border: 0;
+    cursor: pointer;
+}
+
+p {
+    font-size: 32px;
+}
