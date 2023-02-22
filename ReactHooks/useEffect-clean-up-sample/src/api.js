@@ -6,6 +6,7 @@ function subscribeGitHubProfile(username, listener) {
         console.count(`listener for ${username} called`);
         const response = await fetch(`https://api.github.com/users/${username}`);
         const profile = await response.json();
+        listener(profile);
     }, 3000);
 
     return () => {
