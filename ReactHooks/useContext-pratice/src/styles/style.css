@@ -1,0 +1,49 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    padding: 16px;
+    display: flex;
+}
+
+nav ul {
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 8px;
+}
+
+nav button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+main {
+    padding: 32px;
+    text-align: center;
+}
+
+span.subheader {
+    display: block;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.posts li {
+    display: block;
+}
