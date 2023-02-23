@@ -39,6 +39,16 @@ function AnimalFactCard({ animal }) {
         };
     }, [animal]);
 
+    const factChangeHandler = (event) => {
+        setFact(event.target.value);
+    };
+
+    React.useEffect(() => {
+        if (fact !== null) {
+            document.title = fact;
+        }
+    }, [fact]);
+
     return (
         <section>
             <Row label="Image">
@@ -48,7 +58,9 @@ function AnimalFactCard({ animal }) {
                     <img src={image} alt={fact} />
                 )}
             </Row>
-            <Row label="Fact">{fact === null ? <p>Loading fact ...</p> : <p>{fact}</p>}</Row>
+            <Row label="Fact">
+                {fact === null ? <p>Loading fact ...</p> : <textarea value={fact} onChange={factChangeHandler} />}
+            </Row>
         </section>
     );
 }
