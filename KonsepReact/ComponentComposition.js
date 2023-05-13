@@ -7,7 +7,7 @@ function ProfilePicture({ userId }) {
 function ProfileLink({ username }) {
     return (
         <a href={`https://github.com/${username}`} />
-    )
+    );
 }
 
 
